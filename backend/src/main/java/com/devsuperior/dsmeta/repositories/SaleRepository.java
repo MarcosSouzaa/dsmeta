@@ -9,7 +9,7 @@ import org.springframework.data.jpa.repository.Query;
 
 import com.devsuperior.dsmeta.entities.Sale;
 
-public interface SalesRepository extends JpaRepository<Sale, Long> {
+public interface SaleRepository extends JpaRepository<Sale, Long> {
 	
 	//vou incluir uma função que faz uma pesquisa no banco de dados recebendo as datas como argumentos
 	

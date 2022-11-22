@@ -10,13 +10,13 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import com.devsuperior.dsmeta.entities.Sale;
-import com.devsuperior.dsmeta.repositories.SalesRepository;
+import com.devsuperior.dsmeta.repositories.SaleRepository;
 
 @Service
 public class SaleService {
 	
 	@Autowired
-	private SalesRepository repository; //para acessar o banco de dados
+	private SaleRepository repository; //para acessar o banco de dados
 	
 	public Page<Sale> findSales(String minDate, String maxDate, Pageable pageable) { //retorna uma lista de vendas no primeiro momento e depois mudo pra Page
 		
